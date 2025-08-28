@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeQuest - Premium Travel Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="travel8.css">
+</head>
+<body>\
+    <!-- Auth Modal -->
+    <div id="authModal" class="auth-modal">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h2 id="authTitle">Welcome Back</h2>
+                    <p id="authSubtitle">Sign in to your account</p>
+                </div>
+                
+                <!-- Login Form -->
+                <form id="loginForm" class="auth-form">
+                    <div class="auth-input">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="auth-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="auth-btn">
+                        <span>Sign In</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+                
+                <!-- Signup Form -->
+                <form id="signupForm" class="auth-form" style="display: none;">
+                    <div class="auth-input">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="auth-input">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="auth-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="auth-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit" class="auth-btn">
+                        <span>Sign Up</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+                
+                <div class="auth-switch">
+                    <p id="switchText">Don't have an account? <span id="switchBtn">Sign up</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <div id="mainWebsite" class="main-website" style="display: none;">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <div class="nav-logo">
+                        <i class="fas fa-plane"></i>
+                        <span>GlobeQuest</span>
+                    </div>
+                    <div class="nav-menu" id="navMenu">
+                        <a href="#home" class="nav-link active">Home</a>
+                        <a href="#destinations" class="nav-link">Destinations</a>
+                        <a href="#deals" class="nav-link">Deals</a>
+                        <a href="#airlines" class="nav-link">Airlines</a>
+                        <a href="#hotels" class="nav-link">Hotels</a>
+                        <a href="#packages" class="nav-link">Packages</a>
+                        <a href="#reviews" class="nav-link">Reviews</a>
+                    </div>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                   <div class="profile-dropdown">
+    <button class="profile-btn" id="profileBtn">
+        <i class="fas fa-user"></i>
+    </button>
+    <div class="profile-menu" id="profileMenu">
+        <a href="#" class="profile-item" id="myProfileBtn">
+            <i class="fas fa-user-circle"></i>
+            <span>My Profile</span>
+        </a>
+        <a href="#" class="profile-item" id="myBookingsBtn">
+            <i class="fas fa-bookmark"></i>
+            <span>My Bookings</span>
+        </a>
+        <a href="#" class="profile-item" id="mySettingsBtn">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+        </a>
+        <div class="profile-divider"></div>
+        <a href="#" class="profile-item sign-out" id="signOutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Sign Out</span>
+            </a>
+            </div>
+             </div>
+             </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-slider">
+                <div class="hero-slide active" style="background-image: url('https://images.pexels.com/photos/1591375/pexels-photo-1591375.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')"></div>
+                <div class="hero-slide" style="background-image: url('https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')"></div>
+                <div class="hero-slide" style="background-image: url('https://images.pexels.com/photos/1591382/pexels-photo-1591382.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')"></div>
+                <div class="hero-slide" style="background-image: url('https://images.pexels.com/photos/1467300/pexels-photo-1467300.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')"></div>
+            </div>
+            
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-main">Discover Your Next</span>
+                    <span class="hero-title-accent">Adventure</span>
+                </h1>
+                <p class="hero-subtitle">Explore the world's most breathtaking destinations with luxury and comfort</p>
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <div class="search-input">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="searchInput" placeholder="Search destinations...">
+                        </div>
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Explore</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-scroll">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Popular Destinations</h2>
+                    <p class="section-subtitle">Discover the world's most incredible places</p>
+                </div>
+                
+                <div class="cards-grid" id="destinationsGrid">
+                    <!-- Destination cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Deals Section -->
+        <section id="deals" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Exclusive Deals & Offers</h2>
+                    <p class="section-subtitle">Limited time offers you don't want to miss</p>
+                </div>
+                
+                <div class="cards-grid" id="dealsGrid">
+                    <!-- Deal cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Airlines Section -->
+        <section id="airlines" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Premium Airlines</h2>
+                    <p class="section-subtitle">Fly with the world's best airlines</p>
+                </div>
+                
+                <div class="cards-grid" id="airlinesGrid">
+                    <!-- Airline cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Hotels Section -->
+        <section id="hotels" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Luxury Hotels</h2>
+                    <p class="section-subtitle">Stay in comfort and style</p>
+                </div>
+                
+                <div class="cards-grid" id="hotelsGrid">
+                    <!-- Hotel cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Travel Packages</h2>
+                    <p class="section-subtitle">Complete travel experiences curated for you</p>
+                </div>
+                
+                <div class="packages-slider">
+                    <div class="packages-container" id="packagesContainer">
+                        <!-- Package cards will be populated by JavaScript -->
+                    </div>
+                    <button class="slider-btn prev-btn" id="prevPackage">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" id="nextPackage">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What Our Travelers Say</h2>
+                    <p class="section-subtitle">Real experiences from our valued customers</p>
+                </div>
+                
+                <div class="cards-grid" id="reviewsGrid">
+                    <!-- Review cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <i class="fas fa-plane"></i>
+                            <span>GlobeQuest</span>
+                        </div>
+                        <p>Discover the world with premium travel experiences tailored just for you.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#destinations">Destinations</a></li>
+                            <li><a href="#deals">Deals</a></li>
+                            <li><a href="#packages">Packages</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#airlines">Flight Booking</a></li>
+                            <li><a href="#hotels">Hotel Booking</a></li>
+                            <li><a href="#packages">Travel Packages</a></li>
+                            <li><a href="#reviews">Customer Support</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                            <p><i class="fas fa-envelope"></i> info@globequest.com</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Travel St, City, Country</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 GlobeQuest. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+    <!-- Detail Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-slider">
+                    <div class="modal-slides" id="modalSlides">
+                        <!-- Slides will be populated by JavaScript -->
+                    </div>
+                    <button class="slider-nav prev" id="modalPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-nav next" id="modalNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-features" id="modalFeatures">
+                        <!-- Features will be populated by JavaScript -->
+                    </div>
+                    <div class="modal-price">
+                        <span class="price" id="modalPrice"></span>
+                        <span class="price-label">per person</span>
+                    </div>
+                    <button class="book-now-btn" id="bookNowBtn">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Book Now</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Results Modal -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2>Search Results</h2>
+            </div>
+            <div class="modal-body" id="searchResults">
+                <!-- Search results will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Confirmation Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="booking-success">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h2>Booking Confirmed!</h2>
+                    <p>Your booking has been successfully confirmed. We'll send you a confirmation email shortly.</p>
+                    
+                    <div class="booking-details" id="bookingDetails">
+                        <!-- Booking details will be populated by JavaScript -->
+                    </div>
+                    
+                    <button class="close-booking-btn" onclick="closeBookingModal()">
+                        <i class="fas fa-home"></i>
+                        <span>Continue Exploring</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="travel8.js"></script>
+    <!-- Profile Modal -->
+<div class="modal" id="profileModal">
+  <div class="modal-content popup modal--sm">
+    <button class="modal-close" aria-label="Close">&times;</button>
+
+    <div class="modal-header">
+      <div class="mh-left">
+        <div class="avatar" style="background-image:url('https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200')"></div>
+        <div>
+          <h2 class="modal-title">John Doe</h2>
+          <p class="modal-subtitle">johndoe@email.com</p>
+        </div>
+      </div>
+      <div class="mh-right">
+        <span class="chip">Gold Member</span>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="label">Trips</span>
+          <span class="value">3</span>
+        </div>
+        <div class="info-card">
+          <span class="label">Rewards</span>
+          <span class="value">2,450</span>
+        </div>
+        <div class="info-card">
+          <span class="label">Member Since</span>
+          <span class="value">Jan 2023</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn-ghost" id="profileCloseBtn">Close</button>
+      <button class="btn-primary">Edit Profile</button>
+    </div>
+  </div>
+</div>
+
+<!-- Bookings Modal -->
+<div class="modal" id="bookingsModal">
+  <div class="modal-content popup modal--md">
+    <button class="modal-close" aria-label="Close">&times;</button>
+
+    <div class="modal-header">
+      <h2 class="modal-title">My Bookings</h2>
+      <p class="modal-subtitle">Your recent and upcoming trips</p>
+    </div>
+
+    <div class="modal-body" id="bookingsList">
+      <!-- JS will populate this list -->
+      <div class="empty-state">
+        <i class="fas fa-suitcase-rolling"></i>
+        <h3>No bookings yet</h3>
+        <p>When you book a trip, it will show up here.</p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn-ghost" data-close="bookingsModal">Close</button>
+      <button class="btn-primary" data-scroll="#destinations">Explore Destinations</button>
+    </div>
+  </div>
+</div>
+
+<!-- Settings Modal -->
+<div class="modal" id="settingsModal">
+  <div class="modal-content popup modal--sm">
+    <button class="modal-close" aria-label="Close">&times;</button>
+
+    <div class="modal-header">
+      <h2 class="modal-title">Settings</h2>
+      <p class="modal-subtitle">Personalize your experience</p>
+    </div>
+
+    <div class="modal-body">
+      <div class="settings-list">
+        <div class="setting-item">
+          <div>
+            <div class="setting-title">Dark Mode</div>
+            <div class="setting-desc">Switch between light and dark themes</div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="settingsThemeToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="setting-item">
+          <div>
+            <div class="setting-title">Notifications</div>
+            <div class="setting-desc">Get travel tips and price alerts</div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="settingsNotifToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn-ghost" data-close="settingsModal">Close</button>
+      <button class="btn-primary" id="saveSettingsBtn">
+        <i class="fas fa-save"></i> Save
+      </button>
+    </div>
+  </div>
+</div>
+<!-- Floating Chat Button -->
+  <button id="chatBtn" class="chat-btn">💬</button>
+
+  <!-- Floating Chatbox -->
+  <div id="chatbox" class="chatbox">
+    <div class="chat-header">
+      <span>Purple AI</span>
+      <button id="closeChat">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody"></div>
+    <div class="chat-footer">
+      <input type="text" id="userInput" placeholder="Type a message...">
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+</html>
