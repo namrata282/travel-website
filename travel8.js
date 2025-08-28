@@ -67,7 +67,6 @@ const destinations = [
     images: [
         "https://images.pexels.com/photos/1619569/pexels-photo-1619569.jpeg?auto=compress&cs=tinysrgb&w=1200",
         "https://images.pexels.com/photos/2236713/pexels-photo-2236713.jpeg?auto=compress&cs=tinysrgb&w=1200",
-        "https://images.pexels.com/photos/1704120/pexels-photo-1704120.jpeg?auto=compress&cs=tinysrgb&w=1200"
     ],
     longDescription: "Goa is India’s party capital with sun-kissed beaches, seafood shacks, yoga retreats, and Portuguese-inspired architecture. It’s the perfect mix of relaxation and adventure.Sun, sand, and vibrant culture await in Goa, India’s ultimate beach paradise. Relax on golden beaches like Baga and Palolem, soak up the lively nightlife in Calangute, and explore charming Portuguese architecture in Old Goa. From thrilling water sports and colorful festivals to serene sunsets and local seafood delights, Goa offers the perfect blend of adventure, relaxation, and unforgettable memories. 🇮🇳✨",
     features: ["5 Days", "4 Nights", "Beach Resort", "Nightlife", "Yoga Retreat"]
@@ -100,7 +99,6 @@ const deals = [
         images: [
             "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1200",
             "https://images.pexels.com/photos/2476632/pexels-photo-2476632.jpeg?auto=compress&cs=tinysrgb&w=1200",
-            "https://images.pexels.com/photos/2598024/pexels-photo-2598024.jpeg?auto=compress&cs=tinysrgb&w=1200"
         ],
         longDescription: "Escape to paradise in the Maldives, where pristine white sand beaches meet crystal-clear turquoise waters. Stay in luxurious overwater bungalows, snorkel with tropical fish, and enjoy world-class dining with your toes in the sand.Experience paradise in the Maldives, where turquoise waters meet pristine white-sand beaches. Stay in luxurious overwater villas, snorkel among vibrant coral reefs, and watch breathtaking sunsets over the Indian Ocean. Perfect for honeymooners, relaxation seekers, or anyone craving tropical serenity, the Maldives promises an unforgettable escape into pure bliss. 🌊✨",
         features: ["7 Days", "6 Nights", "Overwater Villa", "All Inclusive", "Snorkeling"]
@@ -114,7 +112,6 @@ const deals = [
         image: "https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=800",
         images: [
             "https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1200",
-            "https://images.pexels.com/photos/1906794/pexels-photo-1906794.jpeg?auto=compress&cs=tinysrgb&w=1200",
             "https://images.pexels.com/photos/2832039/pexels-photo-2832039.jpeg?auto=compress&cs=tinysrgb&w=1200"
         ],
         longDescription: "Discover the breathtaking beauty of the Swiss Alps with its snow-capped peaks, pristine lakes, and charming villages. Experience scenic train journeys, outdoor adventures, and Swiss hospitality at its finest.Discover the breathtaking beauty of the Swiss Alps, where snow-capped peaks, alpine meadows, and crystal-clear lakes create a landscape straight out of a postcard. Ski down world-class slopes, hike scenic trails, or take a scenic train ride through charming mountain villages. From adrenaline-packed adventures to peaceful nature escapes, the Swiss Alps offer an unforgettable experience for every traveler. ❄️✨",
@@ -132,7 +129,6 @@ const airlines = [
         images: [
             "https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=1200",
             "https://images.pexels.com/photos/1309644/pexels-photo-1309644.jpeg?auto=compress&cs=tinysrgb&w=1200",
-            "https://images.pexels.com/photos/1499327/pexels-photo-1499327.jpeg?auto=compress&cs=tinysrgb&w=1200"
         ],
         longDescription: "Experience world-class service with Emirates Airlines. Enjoy spacious seating, gourmet dining, award-winning entertainment, and exceptional hospitality that makes every journey memorable.Experience world-class travel with Emirates Airlines, renowned for its luxury, comfort, and exceptional service. From spacious seating and gourmet in-flight dining to award-winning entertainment systems, every journey is designed to make flying a pleasure. Explore destinations across six continents while enjoying the signature Emirates hospitality that turns every flight into a memorable experience. 🌍✨",
         features: ["Business Class", "In-flight Entertainment", "Gourmet Dining", "Lounge Access", "Wi-Fi"]
@@ -146,7 +142,6 @@ const airlines = [
         images: [
             "https://images.pexels.com/photos/1309644/pexels-photo-1309644.jpeg?auto=compress&cs=tinysrgb&w=1200",
             "https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=1200",
-            "https://images.pexels.com/photos/1499327/pexels-photo-1499327.jpeg?auto=compress&cs=tinysrgb&w=1200"
         ],
         longDescription: "Singapore Airlines sets the standard for aviation excellence with its commitment to service, safety, and innovation. Experience the luxury of flying with the world's most awarded airline.Experience excellence in the skies with Singapore Airlines, known for its award-winning service, luxurious comfort, and world-class in-flight amenities. Enjoy spacious seating, gourmet meals, and cutting-edge entertainment as you travel to destinations across the globe. Singapore Airlines turns every journey into a seamless, unforgettable travel experience. 🌏✨",
         features: ["First Class", "Premium Service", "Fine Dining", "Flat Bed Seats", "Priority Boarding"]
@@ -222,7 +217,6 @@ const packages = [
         images: [
             "https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1200",
             "https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=1200",
-            "https://images.pexels.com/photos/2562992/pexels-photo-2562992.jpeg?auto=compress&cs=tinysrgb&w=1200"
         ],
         longDescription: "Experience the ultimate African safari adventure in Kenya's most famous national parks. Witness the Big Five, stay in luxury tented camps, and create memories that will last a lifetime with expert safari guides.Venture into the wild on an African Safari, where majestic landscapes meet incredible wildlife. Witness lions, elephants, giraffes, and rhinos in their natural habitats across iconic destinations like Serengeti, Kruger National Park, and Maasai Mara. From thrilling game drives to luxurious lodges under the stars, an African Safari offers adventure, breathtaking scenery, and memories that last a lifetime. 🌍✨",
         features: ["10 Days", "Safari Game Drives", "Luxury Camps", "Expert Guides", "All Inclusive"]
@@ -236,7 +230,6 @@ const packages = [
     images: [
         "https://images.pexels.com/photos/1619311/pexels-photo-1619311.jpeg?auto=compress&cs=tinysrgb&w=1200",
         "https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&w=1200",
-        "https://images.pexels.com/photos/279418/pexels-photo-279418.jpeg?auto=compress&cs=tinysrgb&w=1200"
     ],
     longDescription: "Experience the grandeur and culture of **Rajasthan** on a 10-day journey through Jaipur, Udaipur, Jodhpur, and Jaisalmer. Explore majestic palaces, ancient forts, vibrant markets, and traditional arts. Stay in luxury heritage hotels, enjoy local cuisine, and immerse yourself in the rich history of India’s royal state. Perfect for culture enthusiasts and history lovers seeking an unforgettable Indian adventure.Stay in luxury heritage hotels that blend royal charm with modern comfort, savor authentic Rajasthani cuisine, and witness traditional music and dance performances. This journey offers an immersive experience of India’s rich history, culture, and architectural splendor, perfect for travelers seeking adventure, culture, and unforgettable memories.",
     features: ["10 Days", "4 Cities", "Luxury Heritage Hotels", "Guided Tours", "Cultural Experiences"]
@@ -249,7 +242,6 @@ const packages = [
     image: "https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&w=1200",
     images: [
         "https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&w=1200",
-        "https://images.pexels.com/photos/208817/pexels-photo-208817.jpeg?auto=compress&cs=tinysrgb&w=1200",
         "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1200"
     ],
     longDescription: "Discover Japan in 7 days with visits to **Tokyo**, **Kyoto**, and **Osaka**. Explore ancient temples, modern skyscrapers, traditional markets, and world-class cuisine. Experience the harmony of Japan’s history and innovation, enjoy scenic gardens, and immerse yourself in cultural performances. Ideal for travelers seeking a blend of tradition and modernity.This tour also includes guided cultural experiences, scenic excursions, and opportunities to witness Japan’s rich heritage alongside its cutting-edge innovation. Perfect for travelers seeking a mix of history, culture, cuisine, and city adventures. ✨🗾",
