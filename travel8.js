@@ -67,6 +67,7 @@ const destinations = [
     images: [
         "https://images.pexels.com/photos/1619569/pexels-photo-1619569.jpeg?auto=compress&cs=tinysrgb&w=1200",
         "https://images.pexels.com/photos/2236713/pexels-photo-2236713.jpeg?auto=compress&cs=tinysrgb&w=1200",
+         "https://images.pexels.com/photos/2236713/pexels-photo-2236713.jpeg?auto=compress&cs=tinysrgb&w=1200",
     ],
     longDescription: "Goa is India’s party capital with sun-kissed beaches, seafood shacks, yoga retreats, and Portuguese-inspired architecture. It’s the perfect mix of relaxation and adventure.Sun, sand, and vibrant culture await in Goa, India’s ultimate beach paradise. Relax on golden beaches like Baga and Palolem, soak up the lively nightlife in Calangute, and explore charming Portuguese architecture in Old Goa. From thrilling water sports and colorful festivals to serene sunsets and local seafood delights, Goa offers the perfect blend of adventure, relaxation, and unforgettable memories. 🇮🇳✨",
     features: ["5 Days", "4 Nights", "Beach Resort", "Nightlife", "Yoga Retreat"]
